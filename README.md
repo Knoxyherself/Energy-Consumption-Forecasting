@@ -14,3 +14,19 @@ Prior to the models being applied, the data was amalgamated from various sources
 ## Result
 The initial results were recorded and improved further by adjusting hyperparameters, namely the learning rate and number of epochs. The final results showed an improvement by increasing the number of epochs (from 15 to 50) and maintaining the same learning rate (0.001). Mean squared error was used to compare the success of the three models. The GRU model performed the best, as expected, as this model is well suited to smaller time-series datasets such as this. 
 Nissan has never previously collected data of this volume or carried out data analysis on such a large scale. Whilst the company have previously carried out some machine learning activities for action recognition and categorisation (for identifying defects within vehicles in real-time), forecasting is a novel concept for the company. It is proposed that the activity is rolled out across the wider plant in the near future, as the raw energy data already exists for the other shops. 
+
+## Guide to Files
+### Appendix A: Data Cleaning
+- A070 Since end of 2019: .csv file containing data for achievement point A070
+- Full_Paint_Data: Stripped out meter reading data with timestamp
+- Paint Calendars: Information on production times for Paintshop
+- Merge Data Sources: Python script to merge various data files
+
+### Appendix B: Preprocessing
+- Paint_Data_Merged: File containing merged and filtered data columns to carry out the 
+investigation
+- Validation Folder: Initial analysis file (using LSTM) 
+
+### LSTM, RNN & GRU Files
+- All Jupyter notebooks used to run the analysis for the 3 models (15 / 50 epochs, various 
+learning rates).  
